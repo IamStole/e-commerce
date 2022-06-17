@@ -1,13 +1,10 @@
 import React from "react"
-import {BsFillTrashFill} from 'react-icons/bs'
 export default function Cart({items , removeItem}) {
     
     return (
         <>
         <div className="cart">
-        <p className="trash" onClick={removeItem}>
-                <BsFillTrashFill />Clear CART<BsFillTrashFill />
-                </p>
+        <p className="trash" onClick={removeItem}>Clear CART</p>
         <div  className="cart-items">
             
             {items.map(item => {
